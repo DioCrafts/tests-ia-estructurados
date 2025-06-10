@@ -1,0 +1,302 @@
+[
+  {
+    "pregunta": "En el contexto del BPTT (Backpropagation Through Time), ¿qué relación tiene la regla de la cadena con el problema del gradiente que se desvanece?",
+    "opciones": [
+      "La regla de la cadena causa ruido aleatorio en la retropropagación",
+      "La multiplicación repetida de derivadas < 1 produce gradientes muy pequeños a través del tiempo",
+      "La acumulación de derivadas en la cadena provoca explosión de gradiente",
+      "No hay relación directa"
+    ],
+    "respuesta": "La multiplicación repetida de derivadas < 1 produce gradientes muy pequeños a través del tiempo"
+  },
+  {
+    "pregunta": "¿Cuál es una característica importante de los modelos MA(q)?",
+    "opciones": [
+      "No dependen de los errores pasados",
+      "Son útiles para modelar la dependencia a largo plazo",
+      "Tienen efectos infinitos en el tiempo",
+      "Siempre son estacionarios"
+    ],
+    "respuesta": "Siempre son estacionarios"
+  },
+  {
+    "pregunta": "¿Cuál es una condición necesaria para que un modelo AR(1) sea estacionario?",
+    "opciones": [
+      "∣ϕ1​∣>1",
+      "ϕ1​ puede ser cualquier valor",
+      "∣ϕ1​∣=1",
+      "∣ϕ1​∣<1"
+    ],
+    "respuesta": "∣ϕ1​∣<1"
+  },
+  {
+    "pregunta": "¿Por qué Prophet selecciona changepoints en el 80% inicial de la serie y no en el 100%?",
+    "opciones": [
+      "Para evitar que el modelo se sobreajuste al tramo final y pierda generalización",
+      "Porque los eventos recientes pueden tener menos datos y mayor incertidumbre",
+      "Porque Prophet asume una distribución normal del error en ese tramo",
+      "Porque el último 20% está reservado para test de validación"
+    ],
+    "respuesta": "Para evitar que el modelo se sobreajuste al tramo final y pierda generalización"
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes supuestos es fundamental para la validez de un modelo GARCH?",
+    "opciones": [
+      "Los residuos del modelo GARCH tienen que ser WN",
+      "Los residuos del modelo GARCH tienen que ser 0",
+      "Los residuos del modelo GARCH tienen que ser GWN",
+      "Los residuos del modelo GARCH tienen que ser SWN"
+    ],
+    "respuesta": "Los residuos del modelo GARCH tienen que ser SWN"
+  },
+  {
+    "pregunta": "¿Qué indica un ACF truncado después de q rezagos y un PACF que decae gradualmente?",
+    "opciones": [
+      "Modelo ARMA(p,q)",
+      "Modelo AR(p)",
+      "Modelo MA(q)",
+      "Modelo no estacionario"
+    ],
+    "respuesta": "Modelo MA(q)"
+  },
+  {
+    "pregunta": "¿Qué componente del modelo Prophet permitiría modelar adecuadamente una caída sistemática de actividad en Navidad y Año Nuevo?",
+    "opciones": [
+      "h(t)",
+      "ϵt​",
+      "g(t)",
+      "s(t)"
+    ],
+    "respuesta": "h(t)"
+  },
+  {
+    "pregunta": "¿Cuál es la esperanza y la varianza incondicional de un proceso MA(1), definido como Xt=μ+εt+θεt−1, con εt∼WN(0,σ2)?",
+    "opciones": [
+      "E[Xt]=μ, Var(Xt)=σ2(1+θ2)",
+      "E[Xt]=μ, Var(Xt)=θ2",
+      "E[Xt]=0, Var(Xt)=σ2",
+      "E[Xt]=μ, Var(Xt)=σ2(1−θ2)"
+    ],
+    "respuesta": "E[Xt]=μ, Var(Xt)=σ2(1+θ2)"
+  },
+  {
+    "pregunta": "¿Cuál es la forma del modelo GARCH(1,1)?",
+    "opciones": [
+      "σt2=ω+αεt−12",
+      "σt2=ω+αεt−12+βσt−12",
+      "σt2=ω+βσt−12",
+      "σt2=αεt2+βσt2"
+    ],
+    "respuesta": "σt2=ω+αεt−12+βσt−12"
+  },
+  {
+    "pregunta": "¿Qué condición garantiza que un modelo GARCH(1,1) sea estacionario en varianza?",
+    "opciones": [
+      "α+β<1",
+      "α+β=1",
+      "α+β>1",
+      "α-β=1"
+    ],
+    "respuesta": "α+β<1"
+  },
+  {
+    "pregunta": "En la implementación de LSTM descrita en el estudio, ¿cuál es la diferencia estructural clave respecto a una RNN clásica?",
+    "opciones": [
+      "Las RNN no requieren tensores de PyTorch",
+      "Las LSTM usan activaciones softmax en lugar de tanh",
+      "Sustituye la capa nn.RNN por nn.LSTM, incorporando puertas de memoria",
+      "LSTM utiliza capas convolucionales profundas"
+    ],
+    "respuesta": "Sustituye la capa nn.RNN por nn.LSTM, incorporando puertas de memoria"
+  },
+  {
+    "pregunta": "En la implementación de SARIMAX con statsmodels, ¿cuál es la sintaxis correcta para definir un modelo con estacionalidad mensual y un término exógeno X?",
+    "opciones": [
+      "SARIMAX(y, order=(1,1,1), seasonal_order=(1,1,1,12), exog=X)",
+      "SARIMAX(y, p=1, d=1, q=1, exog=X, period=12)",
+      "SARIMAX(y, trend='c', X=X, freq=12)",
+      "ARIMA(y, order=(1,1,1), exog=X, freq='M')"
+    ],
+    "respuesta": "SARIMAX(y, order=(1,1,1), seasonal_order=(1,1,1,12), exog=X)"
+  },
+  {
+    "pregunta": "¿Qué papel desempeña la función sigmoide σ en las compuertas de una LSTM?",
+    "opciones": [
+      "Introduce regularización L2",
+      "Normaliza la salida a una distribución gaussiana",
+      "Permite el almacenamiento infinito de estados",
+      "Controla el flujo de información entre 0 (bloquear) y 1 (permitir)"
+    ],
+    "respuesta": "Controla el flujo de información entre 0 (bloquear) y 1 (permitir)"
+  },
+  {
+    "pregunta": "¿Qué medida se puede usar para cuantificar el efecto de la multicolinealidad entre variables exógenas en ARIMAX?",
+    "opciones": [
+      "Autocorrelación parcial (PACF)",
+      "Error medio absoluto (MAE)",
+      "R-cuadrado ajustado",
+      "Factor de Inflación de la Varianza (VIF)"
+    ],
+    "respuesta": "Factor de Inflación de la Varianza (VIF)"
+  },
+  {
+    "pregunta": "¿Qué sucede si ϕ1=1 en un AR(1)?",
+    "opciones": [
+      "La serie es estacionaria",
+      "La varianza disminuye con el tiempo",
+      "La serie se convierte en una caminata aleatoria",
+      "La serie se convierte en MA(1)"
+    ],
+    "respuesta": "La serie se convierte en una caminata aleatoria"
+  },
+  {
+    "pregunta": "¿Cuál es la formulación general de un modelo ARIMAX(p,d,q)?",
+    "opciones": [
+      "Yt=μ+εt+∑j=1qθjεt−j+∑k=1KϕkXt−k",
+      "Yt=∑k=1KβkXt+k+ϕ1Yt−1+εt",
+      "Yt=∑i=1pϕiYt−i+εt+∑j=1qθjεt−j+∑k=1KβkXt,k",
+      "Yt=∑i=1pβiXt−i+∑j=1qθjεt−j"
+    ],
+    "respuesta": "Yt=∑i=1pϕiYt−i+εt+∑j=1qθjεt−j+∑k=1KβkXt,k"
+  },
+  {
+    "pregunta": "¿Qué ocurre si en un modelo GARCH(1,1), α+β=1?",
+    "opciones": [
+      "El modelo es estacionario y ergódico",
+      "El modelo no puede ser estimado por máxima verosimilitud",
+      "La varianza condicional es constante en el tiempo",
+      "Se modela una volatilidad integrada (IGARCH), con memoria infinita"
+    ],
+    "respuesta": "Se modela una volatilidad integrada (IGARCH), con memoria infinita"
+  },
+  {
+    "pregunta": "¿Qué implicación práctica tiene un residuo con autocorrelación significativa en un modelo ARIMAX ya estimado?",
+    "opciones": [
+      "La media del error es distinta de cero",
+      "El modelo tiene multicolinealidad en los términos de error",
+      "La serie es estacional",
+      "El modelo está mal especificado y no ha capturado toda la estructura temporal"
+    ],
+    "respuesta": "El modelo está mal especificado y no ha capturado toda la estructura temporal"
+  },
+  {
+    "pregunta": "¿Cuál es el papel del parámetro ω en un modelo GARCH(1,1)?",
+    "opciones": [
+      "Representa la varianza de largo plazo",
+      "Introduce la componente estocástica no explicada por shocks anteriores",
+      "Determina cuánto de la varianza pasada se hereda",
+      "Permite que exista volatilidad incluso en ausencia de shocks"
+    ],
+    "respuesta": "Permite que exista volatilidad incluso en ausencia de shocks"
+  },
+  {
+    "pregunta": "¿Cuál es la implicación de un valor de d>1 en un modelo ARIMA(p,d,q)?",
+    "opciones": [
+      "Mejora la estacionalidad del modelo y consigue capturar más información",
+      "Puede indicar sobreintegración y pérdida de información estructural",
+      "Significa que la serie es estacionaria",
+      "Siempre mejora las métricas del modelo"
+    ],
+    "respuesta": "Puede indicar sobreintegración y pérdida de información estructural"
+  },
+  {
+    "pregunta": "¿Cuál es la forma general del modelo ARMA(p, q)?",
+    "opciones": [
+      "Xt=μ+∑i=1pϕiXt−i+∑j=1qθjXt−j+εt",
+      "Xt=∑i=1pϕiXt−i+εt+∑j=1qθjεt−j",
+      "Xt=∑i=1pϕiXt−i+∑j=1qθjεt−j",
+      "Xt=εt+∑i=1qϕiεt−i"
+    ],
+    "respuesta": "Xt=∑i=1pϕiXt−i+εt+∑j=1qθjεt−j"
+  },
+  {
+    "pregunta": "¿Cuál es una diferencia clave en la forma de tratar la tendencia entre Prophet y ARIMA?",
+    "opciones": [
+      "Prophet elimina tendencia con suavizado exponencial; ARIMA la modela con AR y MA",
+      "ARIMA usa componentes aditivos; Prophet, multiplicativos",
+      "Prophet requiere que la tendencia sea estacionaria, ARIMA no",
+      "ARIMA diferencia la serie para eliminar tendencia, mientras que Prophet la modela explícitamente"
+    ],
+    "respuesta": "ARIMA diferencia la serie para eliminar tendencia, mientras que Prophet la modela explícitamente"
+  },
+  {
+    "pregunta": "¿Qué implicación computacional tiene que los pesos Wx, Wh, Wy se compartan a lo largo de todos los pasos temporales en una RNN o LSTM?",
+    "opciones": [
+      "Obliga a usar funciones de activación lineales",
+      "Reduce el número total de parámetros del modelo",
+      "Permite entrenar cada paso con pesos distintos",
+      "Aumenta la capacidad del modelo de memorizar secuencias largas"
+    ],
+    "respuesta": "Reduce el número total de parámetros del modelo"
+  },
+  {
+    "pregunta": "¿Qué comportamiento esperas en una RNN clásica si intentas predecir la palabra \"shepherd\" en la secuencia: \"the big black brown dog is a german shepherd\"?",
+    "opciones": [
+      "Las RNN clásicas están diseñadas para dependencias de largo plazo y funcionarán bien",
+      "La red se ajustará perfectamente si entrenamos suficientes épocas",
+      "La RNN no podrá capturar dependencias tan largas debido al desvanecimiento del gradiente",
+      "Aprenderá fácilmente la relación entre \"dog\" y \"shepherd\""
+    ],
+    "respuesta": "La RNN no podrá capturar dependencias tan largas debido al desvanecimiento del gradiente"
+  },
+  {
+    "pregunta": "¿Cuál es una ventaja clave de Prophet frente a modelos clásicos?",
+    "opciones": [
+      "No necesita datos históricos",
+      "No permite ajustes de tendencia",
+      "Requiere mucha intervención manual",
+      "Es robusto frente a datos con estacionalidades y feriados"
+    ],
+    "respuesta": "Es robusto frente a datos con estacionalidades y feriados"
+  },
+  {
+    "pregunta": "¿Cuál es una desventaja de los modelos ARMA en comparación con modelos como LSTM o Prophet?",
+    "opciones": [
+      "No manejan bien no linealidades ni estacionalidades complejas",
+      "No permiten inferencia estadística",
+      "Requieren series multivariadas",
+      "No pueden estimarse con MLE y no es eficiente como modelos no lineales"
+    ],
+    "respuesta": "No manejan bien no linealidades ni estacionalidades complejas"
+  },
+  {
+    "pregunta": "Considerando un modelo AR(1) definido por Yt=ϕ1Yt−1+εt, ¿qué ocurre si ∣ϕ1∣>1?",
+    "opciones": [
+      "El proceso se vuelve explosivo y no estacionario",
+      "La serie es estacionaria con varianza constante",
+      "La serie tiende a cero con el tiempo",
+      "El modelo puede seguir siendo válido si εt∼N(0,1)"
+    ],
+    "respuesta": "El proceso se vuelve explosivo y no estacionario"
+  },
+  {
+    "pregunta": "En el desarrollo hacia atrás del AR(1): Yt=ϕkYt−k+∑j=0k−1ϕjεt−j, ¿qué garantiza que el término con Yt−k desaparezca con el tiempo?",
+    "opciones": [
+      "∣ϕ∣<0",
+      "ϕ>0",
+      "ϕk=1",
+      "∣ϕ∣<1"
+    ],
+    "respuesta": "∣ϕ∣<1"
+  },
+  {
+    "pregunta": "¿Cuál es el principal riesgo al incluir múltiples variables exógenas altamente correlacionadas entre sí en un modelo ARIMAX?",
+    "opciones": [
+      "Sobreestimación de los errores estándar",
+      "Reducción del orden MA efectivo",
+      "Pérdida de estacionariedad",
+      "Inflación de la varianza de los coeficientes estimados debido a multicolinealidad"
+    ],
+    "respuesta": "Inflación de la varianza de los coeficientes estimados debido a multicolinealidad"
+  },
+  {
+    "pregunta": "¿Cuál es una consecuencia directa del \"problema del desvanecimiento del gradiente\" en una RNN?",
+    "opciones": [
+      "Las neuronas dejan de actualizarse en las primeras capas",
+      "Se produce overfitting en las secuencias cortas",
+      "Las predicciones se vuelven ruidosas y no son correctas",
+      "Las dependencias a largo plazo no se aprenden efectivamente"
+    ],
+    "respuesta": "Las dependencias a largo plazo no se aprenden efectivamente"
+  }
+] 
