@@ -298,5 +298,916 @@
       "Las dependencias a largo plazo no se aprenden efectivamente"
     ],
     "respuesta": "Las dependencias a largo plazo no se aprenden efectivamente"
+  },
+  {
+    "pregunta": "En un modelo MA(1): X_t = e_t + θe_{t-1}, ¿cuál es la principal característica de la función de autocorrelación (ACF)?",
+    "opciones": [
+      "Oscila infinitamente si θ>1",
+      "Decae exponencialmente",
+      "Cae abruptamente a cero después del primer rezago",
+      "Es idéntica a la PACF"
+    ],
+    "respuesta": "Cae abruptamente a cero después del primer rezago"
+  },
+  {
+    "pregunta": "En un modelo ARIMA(1,0,1)(1,1,1)[4], ¿qué representa el número 4?",
+    "opciones": [
+      "El rezago del término de media móvil estacional",
+      "El período estacional",
+      "El total de observaciones de entrenamiento",
+      "El parámetro de tendencia lineal"
+    ],
+    "respuesta": "El período estacional"
+  },
+  {
+    "pregunta": "En la práctica, ¿por qué se suele preferir un modelo ARMA(p,q) frente a un modelo AR de orden alto (como AR(9))?",
+    "opciones": [
+      "Porque permite trabajar con series no estacionarias sin transformarlas",
+      "Porque requiere más parámetros pero es más interpretable",
+      "Porque logra parsimonia al capturar la dinámica con menos parámetros",
+      "Porque reduce la necesidad de validar los residuos"
+    ],
+    "respuesta": "Porque logra parsimonia al capturar la dinámica con menos parámetros"
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones es verdadera respecto a un modelo ARIMA(1,1,0)?",
+    "opciones": [
+      "Es un modelo que no incluye ningún componente autorregresivo",
+      "Es equivalente a un modelo MA(1) sin diferenciación",
+      "No se puede aplicar a series estacionarias",
+      "Es un modelo AR(1) con tendencia no estacionaria eliminada mediante una diferencia"
+    ],
+    "respuesta": "Es un modelo AR(1) con tendencia no estacionaria eliminada mediante una diferencia"
+  },
+  {
+    "pregunta": "¿Qué tipo de modelos se podría aplicar aquí? (con gráficos ACF/PAC)",
+    "opciones": [
+      "SARIMA(1,1)(2,1,2)",
+      "S-ARMA(1,1) y un S-ARMA(2,1)",
+      "S-AR(1) y un S-AR(2)",
+      "S-MA(1) y un S-MA(2)"
+    ],
+    "respuesta": "S-AR(1) y un S-AR(2)"
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre la propagación hacia adelante en una RNN es cierta?",
+    "opciones": [
+      "Solo utiliza los valores de entrada x_t",
+      "Usa los pesos W_x, W_h, W_y que cambian en cada paso temporal y por eso se actualizan en cada t",
+      "La salida no depende del estado oculto",
+      "El estado oculto h_t depende tanto de x_t como de h_{t-1}"
+    ],
+    "respuesta": "El estado oculto h_t depende tanto de x_t como de h_{t-1}"
+  },
+  {
+    "pregunta": "¿Qué indica un R-cuadrado bajo pero residuos no autocorrelacionados en un modelo MA(2)?",
+    "opciones": [
+      "La estructura del modelo es adecuada, pero falta información explicativa",
+      "El modelo puede predecir bien pero no ajusta bien los datos históricos",
+      "El modelo no es invertible",
+      "El modelo no es adecuado y tiene errores correlacionados"
+    ],
+    "respuesta": "La estructura del modelo es adecuada, pero falta información explicativa"
+  },
+  {
+    "pregunta": "¿Qué diferencia clave existe entre los residuos del modelo lineal e_t y los residuos estandarizados ε_t en un modelo GARCH?",
+    "opciones": [
+      "e_t es ruido blanco, ε_t no",
+      "ε_t se obtiene normalizando e_t con su varianza condicional",
+      "ε_t se obtiene dividiendo e_t por la media condicional",
+      "ε_t se obtiene normalizando e_t con su volatilidad condicional"
+    ],
+    "respuesta": "ε_t se obtiene normalizando e_t con su volatilidad condicional"
+  },
+  {
+    "pregunta": "¿Qué tipo de sistema de recomendación es más adecuado cuando no se tiene historial previo del usuario, por ejemplo, en el primer inicio de sesión?",
+    "opciones": [
+      "Filtrado colaborativo",
+      "Content-based",
+      "Híbrido",
+      "Popular-based"
+    ],
+    "respuesta": "Popular-based"
+  },
+  {
+    "pregunta": "Si la ACF se anula después del rezago 1 pero la PACF se extiende más allá, ¿qué modelo podría estar generando la serie?",
+    "opciones": [
+      "AR(1)",
+      "MA(1)",
+      "MA(2)",
+      "AR(2)"
+    ],
+    "respuesta": "MA(1)"
+  },
+  {
+    "pregunta": "Considera el modelo MA(1): X_t = ε_t + θε_{t-1} donde ε_t ~ N(0,σ²). ¿Cuál es el efecto de aumentar el valor absoluto de θ en la varianza de X_t?",
+    "opciones": [
+      "La varianza aumenta porque los errores pasados amplifican el valor de la serie",
+      "La varianza se vuelve indefinida cuando θ se acerca a 1",
+      "La varianza de la serie disminuye a medida que |θ| aumenta",
+      "La varianza de la serie se mantiene constante, ya que depende solo de σ²"
+    ],
+    "respuesta": "La varianza aumenta porque los errores pasados amplifican el valor de la serie"
+  },
+  {
+    "pregunta": "En la estimación de un modelo ARMA(1,1), se obtiene un p-valor de 0.82 para el coeficiente φ₁. ¿Qué interpretación es correcta?",
+    "opciones": [
+      "No hay evidencia estadística suficiente para rechazar la hipótesis nula de que φ₁ = 0",
+      "Existe fuerte evidencia de que φ₁ = 1",
+      "El modelo es estacionario porque el p-valor es mayor que 0.05",
+      "El coeficiente φ₁ es altamente significativo al 5%, por lo tanto debe mantenerse"
+    ],
+    "respuesta": "No hay evidencia estadística suficiente para rechazar la hipótesis nula de que φ₁ = 0"
+  },
+  {
+    "pregunta": "¿Qué ocurre si un modelo MA(2) se estima con un MA(1) por error?",
+    "opciones": [
+      "El modelo estará mal especificado y tendrá residuos autocorrelacionados",
+      "El modelo es más estable y tiene menos parámetros que estimar (más eficiente)",
+      "La ACF se sobreestima",
+      "Se ajustará igualmente bien porque los coeficientes caen a 0 y el modelo los ignora"
+    ],
+    "respuesta": "El modelo estará mal especificado y tendrá residuos autocorrelacionados"
+  },
+  {
+    "pregunta": "Considera un modelo AR(1): X_t = φX_{t-1} + ε_t. ¿Qué ocurre si el valor de φ es cercano a 1?",
+    "opciones": [
+      "No afecta la estacionariedad mientras ε_t sea ruido blanco",
+      "La serie se comporta como un paseo aleatorio o casi paseo aleatorio, y es estacionaria",
+      "La serie se vuelve sobreajustada pero permanece estacionaria",
+      "La serie se comporta como un paseo aleatorio o casi paseo aleatorio, y no es estacionaria"
+    ],
+    "respuesta": "La serie se comporta como un paseo aleatorio o casi paseo aleatorio, y no es estacionaria"
+  },
+  {
+    "pregunta": "Una ACF que se desvanece lentamente y una PACF que se corta en lag 2 sugiere el uso de qué modelo?",
+    "opciones": [
+      "ARIMA(0,1,1)",
+      "ARIMA(2,1,0)",
+      "ARIMA(0,0,2)",
+      "ARIMA(2,0,0)"
+    ],
+    "respuesta": "ARIMA(2,0,0)"
+  },
+  {
+    "pregunta": "¿Qué sucede si los residuos estandarizados ε_t de un modelo GARCH(1,1) siguen mostrando autocorrelación en sus cuadrados?",
+    "opciones": [
+      "Esto es esperado en clústeres de volatilidad",
+      "El modelo GARCH no ha capturado completamente la volatilidad",
+      "Se ha eliminado toda la estructura de dependencia de segundo orden",
+      "El modelo es eficiente y no requiere ajustes adicionales"
+    ],
+    "respuesta": "El modelo GARCH no ha capturado completamente la volatilidad"
+  },
+  {
+    "pregunta": "¿Cuál es una característica clave que diferencia una serie con estacionalidad de una serie con ciclo económico?",
+    "opciones": [
+      "El ciclo tiene duración menor a 12 meses, la estacionalidad siempre es mayor",
+      "La estacionalidad ocurre de forma regular, mientras que el ciclo no tiene una periodicidad fija",
+      "El ciclo tiene periodicidad exacta y la estacionalidad no",
+      "Ambos tienen patrones regulares pero el ciclo depende del calendario"
+    ],
+    "respuesta": "La estacionalidad ocurre de forma regular, mientras que el ciclo no tiene una periodicidad fija"
+  },
+  {
+    "pregunta": "Si Y_t está modelado con un proceso AR(3) donde el error de este proceso es Ruido Blanco, ¿esto implica que también Y_t es Ruido Blanco?",
+    "opciones": [
+      "No, porque si Y_t está modelado con un modelo lineal significa que hay autocorrelación",
+      "Sí, porque si el error es Ruido Blanco significa que no hay autocorrelación",
+      "Sí, porque Y_t y el error están correlacionados",
+      "Sí porque no hace falta un modelo lineal ya que el error es Ruido Blanco"
+    ],
+    "respuesta": "No, porque si Y_t está modelado con un modelo lineal significa que hay autocorrelación"
+  },
+  {
+    "pregunta": "En un modelo AR(1): Y_t = φY_{t-1} + ε_t, con ε_t ~ WN. ¿Cuándo es Y_t también ruido blanco?",
+    "opciones": [
+      "Solo si ε_t es gaussiano",
+      "Siempre porque es una combinación lineal de GWN",
+      "Solo si φ = 1",
+      "Solo si φ = 0"
+    ],
+    "respuesta": "Solo si φ = 0"
+  },
+  {
+    "pregunta": "¿Qué test se puede utilizar para evaluar si una serie es normalmente distribuida?",
+    "opciones": [
+      "Test de Ljung-Box",
+      "Test de Shapiro o Jarque-Bera",
+      "Test de Dickey-Fuller",
+      "Test de Kolmogorov-Smirnov exclusivo para autocorrelación"
+    ],
+    "respuesta": "Test de Shapiro o Jarque-Bera"
+  },
+  {
+    "pregunta": "¿Qué tipo de comportamiento tiene la ACF en un modelo AR(1)?",
+    "opciones": [
+      "Se corta después del rezago 1",
+      "Oscila y luego se anula",
+      "Decae exponencialmente sin cortarse",
+      "Se mantiene constante en todos los rezagos"
+    ],
+    "respuesta": "Decae exponencialmente sin cortarse"
+  },
+  {
+    "pregunta": "¿Qué ocurre si ajustas un ARMA(3,3) a una serie que realmente sigue un ARMA(1,1)?",
+    "opciones": [
+      "El modelo ajustará mal y los residuos no serán ruido blanco",
+      "Los parámetros extra tenderán a cero, y el modelo podría seguir siendo válido",
+      "El modelo se vuelve automáticamente no estacionario porque hay más parámetros no significativos",
+      "Hace falta una diferenciación o dos"
+    ],
+    "respuesta": "Los parámetros extra tenderán a cero, y el modelo podría seguir siendo válido"
+  },
+  {
+    "pregunta": "¿Qué propiedad comparten todos los modelos ARIMA que han sido correctamente especificados?",
+    "opciones": [
+      "Residuos homocedásticos",
+      "Residuos que se comportan como ruido blanco",
+      "Residuos sin media",
+      "Residuos con autocorrelación significativa"
+    ],
+    "respuesta": "Residuos que se comportan como ruido blanco"
+  },
+  {
+    "pregunta": "En un modelo ARCH(1) definido como: y_t = ε_t σ_t, σ_t² = ω + α₁y_{t-1}², ε_t ~ i.i.d(0,1). ¿Cuál es el valor esperado de y_t, bajo las hipótesis del modelo?",
+    "opciones": [
+      "E(y_t) = 0",
+      "E(y_t) = α₁",
+      "E(y_t) = ω",
+      "E(y_t) = σ_t"
+    ],
+    "respuesta": "E(y_t) = 0"
+  },
+  {
+    "pregunta": "¿Cuál es la definición del ruido blanco en el contexto de series temporales?",
+    "opciones": [
+      "Un proceso estacionario con media cero, varianza constante y sin autocorrelación lineal y no lineal",
+      "Un proceso estocástico con media cero, varianza constante, sin autocorrelación no lineal y Gaussiano",
+      "Un proceso estacionario con media cero, varianza constante y sin autocorrelación no lineal",
+      "Un proceso estocástico con media cero, varianza constante y sin autocorrelación lineal"
+    ],
+    "respuesta": "Un proceso estocástico con media cero, varianza constante y sin autocorrelación lineal"
+  },
+  {
+    "pregunta": "¿Qué característica NO se observa claramente en la serie temporal de pasajeros aéreos 1949–1960?",
+    "opciones": [
+      "Heterocedasticidad evidente",
+      "Estacionalidad regular",
+      "Tendencia creciente",
+      "Ciclos económicos largos"
+    ],
+    "respuesta": "Ciclos económicos largos"
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes procesos NO es estacionario?",
+    "opciones": [
+      "X_t = 0.65X_{t-1} + ε_t",
+      "X_t = ε_t + ε_{t-1}",
+      "X_t = 0.5X_{t-1} - 0.002X_{t-2} + ε_t",
+      "X_t = 0.95X_{t-1} + ε_t"
+    ],
+    "respuesta": "X_t = 0.95X_{t-1} + ε_t"
+  },
+  {
+    "pregunta": "Si una serie muestra una ACF con decaimiento exponencial y una PACF con corte abrupto después del rezago 2, ¿qué modelo es más apropiado inicialmente?",
+    "opciones": [
+      "ARIMA(2,1,0)",
+      "ARIMA(2,0,0)",
+      "ARIMA(0,0,2)",
+      "ARIMA(0,1,2)"
+    ],
+    "respuesta": "ARIMA(2,0,0)"
+  },
+  {
+    "pregunta": "¿Qué parámetro en SARIMA controla los efectos acumulados de largo plazo estacional?",
+    "opciones": [
+      "d",
+      "p",
+      "s",
+      "D"
+    ],
+    "respuesta": "D"
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones representa la forma expandida (no factorizada) de un modelo SARIMA(1,0,1)(1,0,1)₄?",
+    "opciones": [
+      "Y_t = φ₁Y_{t-1} + Φ₁Y_{t-4} + φ₁Φ₁Y_{t-5} + θ₁ε_{t-1} + Θ₁ε_{t-4}",
+      "Y_t = φ₁Y_{t-1} + Φ₁Y_{t-4} + θ₁Θ₁Y_{t-5} + ε_t",
+      "Y_t = φ₁Y_{t-1} + Φ₁Y_{t-4} + φ₁Φ₁Y_{t-5} + c + θ₁ε_{t-1} + Θ₁ε_{t-4} + θ₁Θ₁ε_{t-5}",
+      "Y_t = φ₁ + Φ₁Y_{t-4} + c + θ₁ε_t + θ₁Θ₁ε_{t-1} + Θ₁ε_{t-4}"
+    ],
+    "respuesta": "Y_t = φ₁Y_{t-1} + Φ₁Y_{t-4} + φ₁Φ₁Y_{t-5} + c + θ₁ε_{t-1} + Θ₁ε_{t-4} + θ₁Θ₁ε_{t-5}"
+  },
+  {
+    "pregunta": "Sea el modelo: y_t = φ₀ + φ₁y_{t-1} + ε_t + θ₁ε_{t-1}. ¿En qué casos es posible que este modelo produzca predicciones inconsistentes?",
+    "opciones": [
+      "Cuando φ₁ = 1",
+      "Cuando φ₁ = 0.8 y θ₁ = 0.2",
+      "Cuando ε_t es normal y φ₁ = 0",
+      "Cuando θ₁ = 0"
+    ],
+    "respuesta": "Cuando φ₁ = 1"
+  },
+  {
+    "pregunta": "¿Qué efecto tiene aumentar el parámetro seasonality_prior_scale en Prophet?",
+    "opciones": [
+      "Permite al modelo capturar mayores variaciones en los patrones no estacionales",
+      "Permite al modelo capturar mayores variaciones en los patrones estacionales antes de un cambio de tendencia",
+      "Permite al modelo capturar mayores variaciones en los patrones estacionales",
+      "Fija el tipo de estacionalidad en modo multiplicativo"
+    ],
+    "respuesta": "Permite al modelo capturar mayores variaciones en los patrones estacionales"
+  },
+  {
+    "pregunta": "¿Qué representa la variable yhat_upper en el output del método predict() de Prophet?",
+    "opciones": [
+      "Límite superior del intervalo de confianza",
+      "El peor caso de predicción",
+      "Una media móvil suavizada con Fourier",
+      "El valor real observado"
+    ],
+    "respuesta": "Límite superior del intervalo de confianza"
+  },
+  {
+    "pregunta": "Después de ajustar un modelo ARIMA, los residuos muestran autocorrelación significativa. ¿Qué implica esto?",
+    "opciones": [
+      "El modelo es perfectamente adecuado",
+      "El modelo está sobreajustado",
+      "Los residuos no afectan la calidad del modelo",
+      "El modelo no ha capturado toda la estructura temporal de la serie"
+    ],
+    "respuesta": "El modelo no ha capturado toda la estructura temporal de la serie"
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes opciones define mejor un proceso de ruido blanco estricto (Strict White Noise)?",
+    "opciones": [
+      "Independencia por ser Gaussiano",
+      "Independencia total",
+      "Independencia por ser Gaussiano",
+      "Independencia lineal"
+    ],
+    "respuesta": "Independencia total"
+  },
+  {
+    "pregunta": "¿Qué combinación de funciones se usa en las compuertas del LSTM para tomar decisiones y generar activaciones?",
+    "opciones": [
+      "Sigmoide y ReLU",
+      "Sigmoide y tanh",
+      "Tanh y softmax",
+      "Softmax y lineal"
+    ],
+    "respuesta": "Sigmoide y tanh"
+  },
+  {
+    "pregunta": "Dada la ecuación del modelo mixto ARMA(1,1): y_t = φ₀ + φ₁y_{t-1} + ε_t + θ₁ε_{t-1} y suponiendo que el proceso es estacionario, ¿cuál es la esperanza matemática E[y_t]?",
+    "opciones": [
+      "φ₀ + θ₁",
+      "0",
+      "φ₀",
+      "φ₀/(1-φ₁)"
+    ],
+    "respuesta": "φ₀/(1-φ₁)"
+  },
+  {
+    "pregunta": "En un modelo MA(q), ¿qué comportamiento se espera de la función de autocorrelación (ACF) y la función de autocorrelación parcial (PACF)?",
+    "opciones": [
+      "Ninguna de las funciones muestra un corte claro",
+      "ACF se corta en q y PACF decrece gradualmente",
+      "ACF decrece exponencialmente y PACF se corta bruscamente en q",
+      "Ambas funciones se cortan bruscamente en q"
+    ],
+    "respuesta": "ACF se corta en q y PACF decrece gradualmente"
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia entre el término e_t y a_t en un modelo con errores autocorrelacionados tipo MA(1)?",
+    "opciones": [
+      "Ambos son equivalentes y representan el mismo error",
+      "e_t es un residuo correlacionado, a_t es el verdadero error blanco",
+      "a_t es el promedio móvil de los errores pasados",
+      "e_t es el verdadero error blanco; a_t es un residuo correlacionado"
+    ],
+    "respuesta": "e_t es un residuo correlacionado, a_t es el verdadero error blanco"
+  },
+  {
+    "pregunta": "¿Un modelo ARMA(0,0) representa qué tipo de proceso?",
+    "opciones": [
+      "Ruido blanco",
+      "Proceso estacionario y SWN",
+      "Proceso GWN y no estacionario",
+      "Ruido blanco estricto (SWN)"
+    ],
+    "respuesta": "Ruido blanco estricto (SWN)"
+  },
+  {
+    "pregunta": "Después de aplicar una diferenciación de primer orden a una serie temporal y obtener un p-valor ADF de 0.005, ¿qué se puede concluir?",
+    "opciones": [
+      "La serie necesita diferenciación adicional",
+      "La serie tiene una raíz unitaria",
+      "La serie es ahora estacionaria",
+      "El modelo ARIMA no es aplicable"
+    ],
+    "respuesta": "La serie es ahora estacionaria"
+  },
+  {
+    "pregunta": "¿Qué dificultad surge al estimar modelos ARMA(p,q) respecto a modelos solo AR o MA?",
+    "opciones": [
+      "La estimación es más compleja porque casi siempre vamos a tener un ARMA(1,1) o ARMA(1,2)",
+      "La estimación es más compleja porque el proceso no tiene una forma cerrada simple",
+      "El modelo ARMA siempre tiene más parámetros que AR o MA",
+      "La estimación es más compleja porque casi siempre vamos a tener un ARMA(1,1) o ARMA(2,1)"
+    ],
+    "respuesta": "La estimación es más compleja porque el proceso no tiene una forma cerrada simple"
+  },
+  {
+    "pregunta": "¿Cuál es la hipótesis nula (H₀) del test de Ljung-Box aplicado a los residuos de un modelo ARIMA?",
+    "opciones": [
+      "No hay autocorrelación en los residuos",
+      "Los residuos están normalmente distribuidos",
+      "Existe autocorrelación significativa en los residuos",
+      "La serie temporal es estacionaria"
+    ],
+    "respuesta": "No hay autocorrelación en los residuos"
+  },
+  {
+    "pregunta": "¿Qué medida se puede usar para cuantificar el efecto de la multicolinealidad entre variables exógenas en ARIMAX?",
+    "opciones": [
+      "R-cuadrado ajustado",
+      "Factor de Inflación de la Varianza (VIF)",
+      "Autocorrelación parcial (PACF)",
+      "Error medio absoluto (MAE)"
+    ],
+    "respuesta": "Factor de Inflación de la Varianza (VIF)"
+  },
+  {
+    "pregunta": "¿Cuándo es Y_t ruido blanco en un modelo AR(1): Y_t = φY_{t-1} + ε_t?",
+    "opciones": [
+      "Solo si ε_t es gaussiano",
+      "Siempre porque es combinación lineal",
+      "Solo si φ = 1",
+      "Solo si φ = 0"
+    ],
+    "respuesta": "Solo si φ = 0"
+  },
+  {
+    "pregunta": "¿Cuál es una razón clave para preferir un modelo ARMA(p,q) sobre un AR(p) o MA(q) puro?",
+    "opciones": [
+      "Los modelos MA no pueden predecir",
+      "Siempre tiene mejor ajuste",
+      "No requiere que la serie sea estacionaria",
+      "Permite capturar estructuras de autocorrelación más complejas sin aumentar excesivamente el orden del modelo"
+    ],
+    "respuesta": "Permite capturar estructuras de autocorrelación más complejas sin aumentar excesivamente el orden del modelo"
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de los changepoints en Prophet?",
+    "opciones": [
+      "Identificar picos en la estacionalidad semanal",
+      "Mejorar la precisión de las bandas de predicción",
+      "Controlar la varianza del modelo estacional",
+      "Permitir que la tendencia tenga rupturas o cambios de pendiente"
+    ],
+    "respuesta": "Permitir que la tendencia tenga rupturas o cambios de pendiente"
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones describe correctamente la diferencia entre un proceso estocástico y una serie temporal?",
+    "opciones": [
+      "Un proceso estocástico es una secuencia de datos observados",
+      "Un proceso estocástico es una colección teórica de variables aleatorias indexadas en el tiempo, mientras que una serie temporal es una realización muestral de ese proceso",
+      "Una serie temporal contiene incertidumbre, el proceso estocástico es determinista",
+      "La serie representa la distribución completa, el proceso solo su media y varianza"
+    ],
+    "respuesta": "Un proceso estocástico es una colección teórica de variables aleatorias indexadas en el tiempo, mientras que una serie temporal es una realización muestral de ese proceso"
+  },
+  {
+    "pregunta": "En GARCH(1,1): y_t = ε_t σ_t, ¿qué representa ε_t?",
+    "opciones": [
+      "El componente determinista",
+      "El error no estandarizado",
+      "El error estandarizado que es WN",
+      "El error estandarizado que es SWN"
+    ],
+    "respuesta": "El error estandarizado que es WN"
+  },
+  {
+    "pregunta": "En ARCH(1): σ_t² = ω + αe_{t-1}², con e_t = σ_t · z_t, ¿Cuál es la varianza incondicional E[e_t²]?",
+    "opciones": [
+      "σ² = ω/(1-α)",
+      "σ² = ω + α",
+      "σ² = ω(1-α)",
+      "σ² = ω/(1-α²)"
+    ],
+    "respuesta": "σ² = ω/(1-α)"
+  },
+  {
+    "pregunta": "¿Qué representa esta expresión en el contexto de BPTT? ∂L/∂W = ∑_t ∂L_t/∂W",
+    "opciones": [
+      "La acumulación de gradientes en cada paso temporal",
+      "El gradiente del estado de celda",
+      "La suma de activaciones y errores",
+      "El error local por paso"
+    ],
+    "respuesta": "La acumulación de gradientes en cada paso temporal"
+  },
+  {
+    "pregunta": "Dado que el meanForecast es constante y el error crece levemente con el horizonte, ¿qué concluye sobre el modelo?",
+    "opciones": [
+      "Detecta una tendencia lineal",
+      "No detecta estructura lineal y estima la media global",
+      "Está sesgado por fechas mal codificadas",
+      "Sobreajustado y predice oscilaciones"
+    ],
+    "respuesta": "No detecta estructura lineal y estima la media global"
+  },
+  {
+    "pregunta": "¿Por qué Prophet no requiere que la serie sea estacionaria?",
+    "opciones": [
+      "Aplica suavizado exponencial",
+      "Aplica diferenciación automáticamente",
+      "Usa transformaciones logarítmicas",
+      "Modela tendencia y estacionalidad por separado de forma explícita"
+    ],
+    "respuesta": "Modela tendencia y estacionalidad por separado de forma explícita"
+  },
+  {
+    "pregunta": "¿Cuál es el papel de la compuerta de olvido f_t en LSTM?",
+    "opciones": [
+      "Aplica no linealidad",
+      "Elimina dependencia de estados anteriores",
+      "Multiplica el gradiente de la celda anterior para preservar información si f_t ≈ 1",
+      "Preserva gradiente si f_t ≈ 0"
+    ],
+    "respuesta": "Multiplica el gradiente de la celda anterior para preservar información si f_t ≈ 1"
+  },
+  {
+    "pregunta": "¿Qué tipo de series es más adecuado para un modelo MA?",
+    "opciones": [
+      "Series con alta autocorrelación",
+      "Series estacionarias con tendencia",
+      "Series con correlaciones prolongadas",
+      "Series donde los choques recientes dominan el comportamiento futuro"
+    ],
+    "respuesta": "Series donde los choques recientes dominan el comportamiento futuro"
+  },
+  {
+    "pregunta": "En MA(1): Y_t = μ + ε_t + θε_{t-1}, ¿qué efecto tiene aumentar θ?",
+    "opciones": [
+      "Modifica la varianza condicional",
+      "Amplifica la variabilidad de corto plazo",
+      "Introduce memoria infinita",
+      "Rompe la estacionariedad"
+    ],
+    "respuesta": "Amplifica la variabilidad de corto plazo"
+  },
+  {
+    "pregunta": "¿Qué efecto tiene aumentar changepoint_prior_scale en Prophet?",
+    "opciones": [
+      "Hace el modelo más conservador",
+      "Elimina estacionalidad",
+      "Disminuye changepoints",
+      "Hace el modelo más flexible ante cambios en la tendencia"
+    ],
+    "respuesta": "Hace el modelo más flexible ante cambios en la tendencia"
+  },
+  {
+    "pregunta": "¿Qué transformación es útil para estabilizar la varianza de una serie temporal?",
+    "opciones": [
+      "Diferenciación de segundo orden",
+      "Cálculo del logaritmo",
+      "Diferenciación de primer orden",
+      "Suavizado exponencial"
+    ],
+    "respuesta": "Cálculo del logaritmo"
+  },
+  {
+    "pregunta": "¿Cuál de estos modelos es el más transparente para usuarios no técnicos?",
+    "opciones": [
+      "ARIMA",
+      "GARCH",
+      "Prophet",
+      "LSTM"
+    ],
+    "respuesta": "Prophet"
+  },
+  {
+    "pregunta": "En GARCH(1,1), ¿qué ocurre si eliminamos el término ε_t en y_t = ε_t · σ_t?",
+    "opciones": [
+      "Se duplicaría la varianza condicional",
+      "Seguiría capturando heterocedasticidad",
+      "El modelo no representaría la aleatoriedad de la serie",
+      "El modelo sería estacionario automáticamente"
+    ],
+    "respuesta": "El modelo no representaría la aleatoriedad de la serie"
+  },
+  {
+    "pregunta": "¿Cuál es el requisito de nombres de columnas en Prophet para que el modelo funcione correctamente?",
+    "opciones": [
+      "\"timestamp\" y \"value\"",
+      "\"ds\" y \"y\"",
+      "\"date\" y \"target\"",
+      "\"x\" y \"y_hat\""
+    ],
+    "respuesta": "\"ds\" y \"y\""
+  },
+  {
+    "pregunta": "En un modelo combinado AR(1)-ARCH(1) se tiene: μ = 0, φ = 0.5, ω = 1, α₁ = 0.6, Y_{t-1} = 2, y u_{t-1} = -1. ¿Cuál de las siguientes afirmaciones es correcta sobre el valor esperado de y_t y su varianza condicional?",
+    "opciones": [
+      "E(y_t | F_{t-1}) = 0 y la varianza condicional es constante",
+      "E(y_t | F_{t-1}) = 1 y la varianza condicional de 1.8",
+      "E(y_t | F_{t-1}) = 1 y la varianza condicional de 3",
+      "E(y_t | F_{t-1}) = 1 y la varianza condicional de 1.6"
+    ],
+    "respuesta": "E(y_t | F_{t-1}) = 1 y la varianza condicional de 1.6"
+  },
+  {
+    "pregunta": "¿Qué tipo de comportamiento tiene la PACF de un modelo MA(2)?",
+    "opciones": [
+      "Es constante en todos los rezagos",
+      "Decae exponencialmente",
+      "Se corta después del rezago 2",
+      "No tiene forma definida"
+    ],
+    "respuesta": "Decae exponencialmente"
+  },
+  {
+    "pregunta": "¿Qué condición NO se debería cumplir para que un modelo GARCH(1,1) sea estacionario en segunda orden (estable)?",
+    "opciones": [
+      "α + β > 1",
+      "ω > 0",
+      "α, β ≥ 0",
+      "α + β < 1"
+    ],
+    "respuesta": "α + β > 1"
+  },
+  {
+    "pregunta": "En el contexto del fenómeno Long Tail, ¿cuál es una ventaja clave para los sistemas de recomendación?",
+    "opciones": [
+      "Reduce el uso de recursos computacionales al trabajar con menos datos",
+      "Aprovecha el valor colectivo de productos de nicho que individualmente tienen baja demanda",
+      "Permite enfocarse solo en los productos más rentables",
+      "Elimina la necesidad de almacenar información de nicho"
+    ],
+    "respuesta": "Aprovecha el valor colectivo de productos de nicho que individualmente tienen baja demanda"
+  },
+  {
+    "pregunta": "Este tipo de comportamiento en una serie temporal es:",
+    "opciones": [
+      "Señal de sobreajuste en la correlación",
+      "Señal de correlación y implica que podemos aplicar un modelo lineal a la variable representada",
+      "Señal de no estacionariedad",
+      "Señal de que hace falta un modelo GARCH"
+    ],
+    "respuesta": "Señal de no estacionariedad"
+  },
+  {
+    "pregunta": "En el modelo Prophet, ¿qué componente controla directamente la suavidad de los tramos lineales de tendencia?",
+    "opciones": [
+      "holidays_prior_scale",
+      "changepoint_prior_scale",
+      "trend_seasonality_ratio",
+      "seasonality_prior_scale"
+    ],
+    "respuesta": "changepoint_prior_scale"
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes procesos NO es estacionario?",
+    "opciones": [
+      "X_t = ε_t + ε_{t-1}",
+      "X_t = 0.65X_{t-1} + ε_t",
+      "X_t = 0.95X_{t-1} + ε_t",
+      "X_t = 0.5X_{t-1} - 0.002X_{t-2} + ε_t"
+    ],
+    "respuesta": "X_t = ε_t + ε_{t-1}"
+  },
+  {
+    "pregunta": "Esta función de activación se llama:",
+    "opciones": [
+      "LeakyReLU",
+      "ReLU",
+      "Tanh",
+      "Sigmoid"
+    ],
+    "respuesta": "ReLU"
+  },
+  {
+    "pregunta": "Una ACF que se desvanece lentamente y una PACF que se corta en lag 2 sugiere el uso de qué modelo?",
+    "opciones": [
+      "ARIMA(2,0,0)",
+      "ARIMA(0,0,2)",
+      "ARIMA(0,1,1)",
+      "ARIMA(2,1,0)"
+    ],
+    "respuesta": "ARIMA(2,1,0)"
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia principal entre seasonality_mode='additive' y 'multiplicative'?",
+    "opciones": [
+      "El modo aditivo es más adecuado cuando la estacionalidad cambia con la varianza",
+      "El modo aditivo se entrena solo si hay días festivos",
+      "El modo multiplicativo escala la estacionalidad en proporción a la tendencia",
+      "No hay diferencia funcional, solo semántica"
+    ],
+    "respuesta": "El modo multiplicativo escala la estacionalidad en proporción a la tendencia"
+  },
+  {
+    "pregunta": "¿Cuál es una característica distintiva de un sistema de recomendación popular-based?",
+    "opciones": [
+      "Usa filtrado colaborativo basado en KNN",
+      "Personaliza las recomendaciones según las características del usuario",
+      "Utiliza modelos supervisados de clasificación",
+      "Ofrece recomendaciones idénticas a todos los usuarios"
+    ],
+    "respuesta": "Ofrece recomendaciones idénticas a todos los usuarios"
+  },
+  {
+    "pregunta": "Supón que una serie temporal tiene una ACF que decrece muy lentamente y nunca cae a cero, mientras que la PACF tiene un corte claro en el rezago 1. ¿Cuál es la mejor interpretación?",
+    "opciones": [
+      "La serie es ruido blanco estricto",
+      "La serie sigue un proceso AR(1) posiblemente no estacionario",
+      "La serie sigue un proceso MA(1) probablemente estacionario",
+      "La serie sigue un proceso AR(1) posiblemente estacionario"
+    ],
+    "respuesta": "La serie sigue un proceso AR(1) posiblemente no estacionario"
+  },
+  {
+    "pregunta": "¿Cuál es el papel fundamental de la compuerta de olvido f_t en la preservación del gradiente en una LSTM?",
+    "opciones": [
+      "Multiplica directamente el gradiente de la celda anterior, permitiendo que el gradiente no desaparezca si f_t ≈ 1",
+      "Permite transformar la salida con una función no lineal que reduce la varianza",
+      "Aumenta el aprendizaje al eliminar la dependencia de los estados anteriores",
+      "Multiplica directamente el gradiente de la celda anterior, permitiendo que el gradiente no desaparezca si f_t ≈ 0"
+    ],
+    "respuesta": "Multiplica directamente el gradiente de la celda anterior, permitiendo que el gradiente no desaparezca si f_t ≈ 1"
+  },
+  {
+    "pregunta": "¿Qué parámetro en SARIMA controla los efectos acumulados de largo plazo estacional?",
+    "opciones": [
+      "d",
+      "D",
+      "s",
+      "p"
+    ],
+    "respuesta": "D"
+  },
+  {
+    "pregunta": "¿Cuál es la función principal de make_future_dataframe() en Prophet?",
+    "opciones": [
+      "Generar las fechas sobre las que se desea hacer predicción, extendiendo el dataset",
+      "Estimar los residuos del modelo",
+      "Crear un nuevo modelo basado en fechas futuras simuladas",
+      "Predecir automáticamente todas las variables exógenas"
+    ],
+    "respuesta": "Generar las fechas sobre las que se desea hacer predicción, extendiendo el dataset"
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones describe correctamente la diferencia fundamental entre la función de autocorrelación (ACF) y la función de autocorrelación parcial (PACF)?",
+    "opciones": [
+      "La ACF mide la correlación entre observaciones separadas por un lag, incluyendo efectos indirectos, mientras que la PACF mide la correlación controlando por lags intermedios",
+      "La PACF siempre es cero para lags mayores que uno, mientras que la ACF puede oscilar",
+      "La ACF es usada en modelos MA y la PACF en modelos AR, pero ninguna tiene interpretación teórica",
+      "La ACF mide la correlación directa entre una variable y su media, mientras que la PACF mide la correlación controlando efectos lineales"
+    ],
+    "respuesta": "La ACF mide la correlación entre observaciones separadas por un lag, incluyendo efectos indirectos, mientras que la PACF mide la correlación controlando por lags intermedios"
+  },
+  {
+    "pregunta": "En la validación cruzada de Prophet, ¿qué función se utiliza para evaluar el modelo?",
+    "opciones": [
+      "prophet.validate()",
+      "cross_validation()",
+      "split_time_series()",
+      "prophet.cv_fit()"
+    ],
+    "respuesta": "cross_validation()"
+  },
+  {
+    "pregunta": "En un proceso MA(1): Y_t = μ + ε_t + θ_1ε_{t-1}. Si ε_t es un proceso de Ruido Blanco, ¿también lo es Y_t?",
+    "opciones": [
+      "No, porque Y_t presenta correlación serial con su pasado",
+      "Sí, porque la combinación lineal de ruido blanco sigue siendo ruido blanco",
+      "Depende del valor de μ y de su distribución con el pasado de la variable dependiente",
+      "Sí, siempre que θ_1 = 0"
+    ],
+    "respuesta": "No, porque Y_t presenta correlación serial con su pasado"
+  },
+  {
+    "pregunta": "¿Qué transformación es útil para estabilizar la varianza de una serie temporal?",
+    "opciones": [
+      "Suavizado exponencial",
+      "Diferenciación de primer orden",
+      "Diferenciación de segundo orden",
+      "Cálculo del logaritmo"
+    ],
+    "respuesta": "Cálculo del logaritmo"
+  },
+  {
+    "pregunta": "Sea el modelo: y_t = φ_0 + φ_1y_{t-1} + ε_t + θ_1ε_{t-1}. ¿En qué casos es posible que este modelo produzca predicciones inconsistentes?",
+    "opciones": [
+      "Cuando φ_1 = 1",
+      "Cuando θ_1 = 0",
+      "Cuando φ_1 = 0.8 y θ_1 = 0.2",
+      "Cuando ε_t es normal y φ_1 = 0"
+    ],
+    "respuesta": "Cuando φ_1 = 1"
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones describe correctamente la diferencia entre un proceso estocástico y una serie temporal?",
+    "opciones": [
+      "Una serie temporal representa la distribución de probabilidad completa de una variable",
+      "Una serie temporal contiene incertidumbre en su definición, mientras que un proceso estocástico es determinista",
+      "Un proceso estocástico es una secuencia de datos observados, mientras que una serie temporal contiene únicamente valores teóricos",
+      "Un proceso estocástico es una colección teórica de variables aleatorias indexadas en el tiempo, mientras que una serie temporal es una realización muestral de ese proceso"
+    ],
+    "respuesta": "Un proceso estocástico es una colección teórica de variables aleatorias indexadas en el tiempo, mientras que una serie temporal es una realización muestral de ese proceso"
+  },
+  {
+    "pregunta": "¿Por qué la ausencia de autocorrelación no implica necesariamente independencia en una serie?",
+    "opciones": [
+      "Porque se requiere que la media y la varianza",
+      "Porque la PACF es más sensible que la ACF",
+      "Porque las variables pueden estar relacionadas no linealmente",
+      "Porque la autocorrelación solo existe si hay t"
+    ],
+    "respuesta": "Porque las variables pueden estar relacionadas no linealmente"
+  },
+  {
+    "pregunta": "¿Qué tipo de tareas sería más adecuada para LSTM que para Prophet?",
+    "opciones": [
+      "Secuencias temporales no estacionarias con relaciones no lineales multivariantes",
+      "Forecast de series con rupturas lineales y fes",
+      "Modelado de ventas estacionales con datos",
+      "Predicción de demanda diaria con estacional"
+    ],
+    "respuesta": "Secuencias temporales no estacionarias con relaciones no lineales multivariantes"
+  },
+  {
+    "pregunta": "En esta estructura de una RNN estándar, que representan los círculos azules?",
+    "opciones": [
+      "Funciones de activación",
+      "Dimensiones de ht",
+      "Nodos ocultos",
+      "Estados ocultos"
+    ],
+    "respuesta": "Nodos ocultos"
+  },
+  {
+    "pregunta": "La serie presenta una clara tendencia creciente, pero también pequeñas fluctuaciones de corto plazo (bajas y subidas irregulares). ¿A qué se deben estas pequeñas variaciones?",
+    "opciones": [
+      "A los términos autorregresivos Y_{t-1}, Y_{t-2}",
+      "A la parte determinista del modelo (la constante)",
+      "A la componente de ruido aleatorio ε_t",
+      "Al hecho que la serie no es estacionaria debido a un valor de los coeficiente > 1"
+    ],
+    "respuesta": "A la componente de ruido aleatorio ε_t"
+  },
+  {
+    "pregunta": "¿Qué representa el operador de rezago B (o L) aplicado a Yt?",
+    "opciones": [
+      "BY_t = Y_t - Y_{t-1}",
+      "BY_t = Y_{t-1}",
+      "BY_t = Y_{t-2}",
+      "BY_t = Y_{t+1}"
+    ],
+    "respuesta": "BY_t = Y_{t-1}"
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones es correcta al interpretar un modelo ARIMA(2,1,1)?",
+    "opciones": [
+      "El modelo contiene 2 retardos AR y 1 componente MA sin ninguna transformación necesaria de la variable original",
+      "El modelo utiliza una diferenciación de primer orden y contiene 2 retardos AR y 1 componente MA",
+      "El modelo tiene una tendencia estacional de orden 1 y dos componentes MA",
+      "Es un modelo estacionario sin necesidad de diferenciación"
+    ],
+    "respuesta": "El modelo utiliza una diferenciación de primer orden y contiene 2 retardos AR y 1 componente MA"
+  },
+  {
+    "pregunta": "¿Qué componente del modelo Prophet representa patrones que se repiten periódicamente como las horas punta diarias o los fines de semana?",
+    "opciones": [
+      "h(t)",
+      "ε_t",
+      "s(t)",
+      "g(t)"
+    ],
+    "respuesta": "s(t)"
+  },
+  {
+    "pregunta": "¿Qué función de activación se utiliza para generar la nueva candidata de memoria en una LSTM?",
+    "opciones": [
+      "Tanh",
+      "ReLU",
+      "Softmax",
+      "Sigmoide"
+    ],
+    "respuesta": "Tanh"
+  },
+  {
+    "pregunta": "En el contexto de redes recurrentes, ¿cuál es la razón principal por la que las LSTM son superiores a las RNN estándar?",
+    "opciones": [
+      "Mitigan el problema del gradiente desvaneciente",
+      "Solo pueden procesar secuencias de longitu",
+      "Utilizan funciones de activación lineales",
+      "Requieren menos memoria computacional"
+    ],
+    "respuesta": "Mitigan el problema del gradiente desvaneciente"
   }
-] 
+]
+
