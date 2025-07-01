@@ -730,16 +730,6 @@
     "respuesta": "No hay autocorrelación en los residuos"
   },
   {
-    "pregunta": "¿Qué medida se puede usar para cuantificar el efecto de la multicolinealidad entre variables exógenas en ARIMAX?",
-    "opciones": [
-      "R-cuadrado ajustado",
-      "Factor de Inflación de la Varianza (VIF)",
-      "Autocorrelación parcial (PACF)",
-      "Error medio absoluto (MAE)"
-    ],
-    "respuesta": "Factor de Inflación de la Varianza (VIF)"
-  },
-  {
     "pregunta": "¿Cuándo es Y_t ruido blanco en un modelo AR(1): Y_t = φY_{t-1} + ε_t?",
     "opciones": [
       "Solo si ε_t es gaussiano",
@@ -970,16 +960,6 @@
     "respuesta": "changepoint_prior_scale"
   },
   {
-    "pregunta": "¿Cuál de los siguientes procesos NO es estacionario?",
-    "opciones": [
-      "X_t = ε_t + ε_{t-1}",
-      "X_t = 0.65X_{t-1} + ε_t",
-      "X_t = 0.95X_{t-1} + ε_t",
-      "X_t = 0.5X_{t-1} - 0.002X_{t-2} + ε_t"
-    ],
-    "respuesta": "X_t = ε_t + ε_{t-1}"
-  },
-  {
     "pregunta": "Esta función de activación se llama:",
     "opciones": [
       "LeakyReLU",
@@ -988,16 +968,6 @@
       "Sigmoid"
     ],
     "respuesta": "ReLU"
-  },
-  {
-    "pregunta": "Una ACF que se desvanece lentamente y una PACF que se corta en lag 2 sugiere el uso de qué modelo?",
-    "opciones": [
-      "ARIMA(2,0,0)",
-      "ARIMA(0,0,2)",
-      "ARIMA(0,1,1)",
-      "ARIMA(2,1,0)"
-    ],
-    "respuesta": "ARIMA(2,1,0)"
   },
   {
     "pregunta": "¿Cuál es la diferencia principal entre seasonality_mode='additive' y 'multiplicative'?",
@@ -1040,16 +1010,6 @@
     "respuesta": "Multiplica directamente el gradiente de la celda anterior, permitiendo que el gradiente no desaparezca si f_t ≈ 1"
   },
   {
-    "pregunta": "¿Qué parámetro en SARIMA controla los efectos acumulados de largo plazo estacional?",
-    "opciones": [
-      "d",
-      "D",
-      "s",
-      "p"
-    ],
-    "respuesta": "D"
-  },
-  {
     "pregunta": "¿Cuál es la función principal de make_future_dataframe() en Prophet?",
     "opciones": [
       "Generar las fechas sobre las que se desea hacer predicción, extendiendo el dataset",
@@ -1088,36 +1048,6 @@
       "Sí, siempre que θ_1 = 0"
     ],
     "respuesta": "No, porque Y_t presenta correlación serial con su pasado"
-  },
-  {
-    "pregunta": "¿Qué transformación es útil para estabilizar la varianza de una serie temporal?",
-    "opciones": [
-      "Suavizado exponencial",
-      "Diferenciación de primer orden",
-      "Diferenciación de segundo orden",
-      "Cálculo del logaritmo"
-    ],
-    "respuesta": "Cálculo del logaritmo"
-  },
-  {
-    "pregunta": "Sea el modelo: y_t = φ_0 + φ_1y_{t-1} + ε_t + θ_1ε_{t-1}. ¿En qué casos es posible que este modelo produzca predicciones inconsistentes?",
-    "opciones": [
-      "Cuando φ_1 = 1",
-      "Cuando θ_1 = 0",
-      "Cuando φ_1 = 0.8 y θ_1 = 0.2",
-      "Cuando ε_t es normal y φ_1 = 0"
-    ],
-    "respuesta": "Cuando φ_1 = 1"
-  },
-  {
-    "pregunta": "¿Cuál de las siguientes afirmaciones describe correctamente la diferencia entre un proceso estocástico y una serie temporal?",
-    "opciones": [
-      "Una serie temporal representa la distribución de probabilidad completa de una variable",
-      "Una serie temporal contiene incertidumbre en su definición, mientras que un proceso estocástico es determinista",
-      "Un proceso estocástico es una secuencia de datos observados, mientras que una serie temporal contiene únicamente valores teóricos",
-      "Un proceso estocástico es una colección teórica de variables aleatorias indexadas en el tiempo, mientras que una serie temporal es una realización muestral de ese proceso"
-    ],
-    "respuesta": "Un proceso estocástico es una colección teórica de variables aleatorias indexadas en el tiempo, mientras que una serie temporal es una realización muestral de ese proceso"
   },
   {
     "pregunta": "¿Por qué la ausencia de autocorrelación no implica necesariamente independencia en una serie?",
@@ -1210,4 +1140,3 @@
     "respuesta": "Mitigan el problema del gradiente desvaneciente"
   }
 ]
-
